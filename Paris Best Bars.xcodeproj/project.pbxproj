@@ -14,6 +14,7 @@
 		44208EF61CC51DAB0004287D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44208EF41CC51DAB0004287D /* LaunchScreen.storyboard */; };
 		44208F011CC51DAB0004287D /* Paris_Best_BarsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44208F001CC51DAB0004287D /* Paris_Best_BarsTests.swift */; };
 		44208F0C1CC51DAB0004287D /* Paris_Best_BarsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44208F0B1CC51DAB0004287D /* Paris_Best_BarsUITests.swift */; };
+		44208F1A1CC5201B0004287D /* BarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44208F191CC5201B0004287D /* BarTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		44208F071CC51DAB0004287D /* Paris Best BarsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Paris Best BarsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44208F0B1CC51DAB0004287D /* Paris_Best_BarsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paris_Best_BarsUITests.swift; sourceTree = "<group>"; };
 		44208F0D1CC51DAB0004287D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44208F191CC5201B0004287D /* BarTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				44208EEB1CC51DAB0004287D /* AppDelegate.swift */,
 				44208EED1CC51DAB0004287D /* ViewController.swift */,
 				44208EEF1CC51DAB0004287D /* Main.storyboard */,
+				44208F191CC5201B0004287D /* BarTableViewCell.swift */,
 				44208EF21CC51DAB0004287D /* Assets.xcassets */,
 				44208EF41CC51DAB0004287D /* LaunchScreen.storyboard */,
 				44208EF71CC51DAB0004287D /* Info.plist */,
@@ -258,6 +261,7 @@
 			files = (
 				44208EEE1CC51DAB0004287D /* ViewController.swift in Sources */,
 				44208EEC1CC51DAB0004287D /* AppDelegate.swift in Sources */,
+				44208F1A1CC5201B0004287D /* BarTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
