@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44208EEC1CC51DAB0004287D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44208EEB1CC51DAB0004287D /* AppDelegate.swift */; };
+		44208EEE1CC51DAB0004287D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44208EED1CC51DAB0004287D /* ViewController.swift */; };
+		44208EF11CC51DAB0004287D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44208EEF1CC51DAB0004287D /* Main.storyboard */; };
+		44208EF31CC51DAB0004287D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44208EF21CC51DAB0004287D /* Assets.xcassets */; };
+		44208EF61CC51DAB0004287D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44208EF41CC51DAB0004287D /* LaunchScreen.storyboard */; };
+		44208F011CC51DAB0004287D /* Paris_Best_BarsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44208F001CC51DAB0004287D /* Paris_Best_BarsTests.swift */; };
+		44208F0C1CC51DAB0004287D /* Paris_Best_BarsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44208F0B1CC51DAB0004287D /* Paris_Best_BarsUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		44208EFD1CC51DAB0004287D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44208EE01CC51DAB0004287D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44208EE71CC51DAB0004287D;
+			remoteInfo = "Paris Best Bars";
+		};
+		44208F081CC51DAB0004287D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44208EE01CC51DAB0004287D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44208EE71CC51DAB0004287D;
+			remoteInfo = "Paris Best Bars";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		44208EE81CC51DAB0004287D /* Paris Best Bars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Paris Best Bars.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44208EEB1CC51DAB0004287D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		44208EED1CC51DAB0004287D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		44208EF01CC51DAB0004287D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		44208EF21CC51DAB0004287D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44208EF51CC51DAB0004287D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		44208EF71CC51DAB0004287D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44208EFC1CC51DAB0004287D /* Paris Best BarsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Paris Best BarsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44208F001CC51DAB0004287D /* Paris_Best_BarsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paris_Best_BarsTests.swift; sourceTree = "<group>"; };
+		44208F021CC51DAB0004287D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44208F071CC51DAB0004287D /* Paris Best BarsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Paris Best BarsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44208F0B1CC51DAB0004287D /* Paris_Best_BarsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paris_Best_BarsUITests.swift; sourceTree = "<group>"; };
+		44208F0D1CC51DAB0004287D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44208EE51CC51DAB0004287D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44208EF91CC51DAB0004287D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44208F041CC51DAB0004287D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44208EDF1CC51DAB0004287D = {
+			isa = PBXGroup;
+			children = (
+				44208EEA1CC51DAB0004287D /* Paris Best Bars */,
+				44208EFF1CC51DAB0004287D /* Paris Best BarsTests */,
+				44208F0A1CC51DAB0004287D /* Paris Best BarsUITests */,
+				44208EE91CC51DAB0004287D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		44208EE91CC51DAB0004287D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44208EE81CC51DAB0004287D /* Paris Best Bars.app */,
+				44208EFC1CC51DAB0004287D /* Paris Best BarsTests.xctest */,
+				44208F071CC51DAB0004287D /* Paris Best BarsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44208EEA1CC51DAB0004287D /* Paris Best Bars */ = {
+			isa = PBXGroup;
+			children = (
+				44208EEB1CC51DAB0004287D /* AppDelegate.swift */,
+				44208EED1CC51DAB0004287D /* ViewController.swift */,
+				44208EEF1CC51DAB0004287D /* Main.storyboard */,
+				44208EF21CC51DAB0004287D /* Assets.xcassets */,
+				44208EF41CC51DAB0004287D /* LaunchScreen.storyboard */,
+				44208EF71CC51DAB0004287D /* Info.plist */,
+			);
+			path = "Paris Best Bars";
+			sourceTree = "<group>";
+		};
+		44208EFF1CC51DAB0004287D /* Paris Best BarsTests */ = {
+			isa = PBXGroup;
+			children = (
+				44208F001CC51DAB0004287D /* Paris_Best_BarsTests.swift */,
+				44208F021CC51DAB0004287D /* Info.plist */,
+			);
+			path = "Paris Best BarsTests";
+			sourceTree = "<group>";
+		};
+		44208F0A1CC51DAB0004287D /* Paris Best BarsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				44208F0B1CC51DAB0004287D /* Paris_Best_BarsUITests.swift */,
+				44208F0D1CC51DAB0004287D /* Info.plist */,
+			);
+			path = "Paris Best BarsUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44208EE71CC51DAB0004287D /* Paris Best Bars */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44208F101CC51DAB0004287D /* Build configuration list for PBXNativeTarget "Paris Best Bars" */;
+			buildPhases = (
+				44208EE41CC51DAB0004287D /* Sources */,
+				44208EE51CC51DAB0004287D /* Frameworks */,
+				44208EE61CC51DAB0004287D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Paris Best Bars";
+			productName = "Paris Best Bars";
+			productReference = 44208EE81CC51DAB0004287D /* Paris Best Bars.app */;
+			productType = "com.apple.product-type.application";
+		};
+		44208EFB1CC51DAB0004287D /* Paris Best BarsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44208F131CC51DAB0004287D /* Build configuration list for PBXNativeTarget "Paris Best BarsTests" */;
+			buildPhases = (
+				44208EF81CC51DAB0004287D /* Sources */,
+				44208EF91CC51DAB0004287D /* Frameworks */,
+				44208EFA1CC51DAB0004287D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44208EFE1CC51DAB0004287D /* PBXTargetDependency */,
+			);
+			name = "Paris Best BarsTests";
+			productName = "Paris Best BarsTests";
+			productReference = 44208EFC1CC51DAB0004287D /* Paris Best BarsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		44208F061CC51DAB0004287D /* Paris Best BarsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44208F161CC51DAB0004287D /* Build configuration list for PBXNativeTarget "Paris Best BarsUITests" */;
+			buildPhases = (
+				44208F031CC51DAB0004287D /* Sources */,
+				44208F041CC51DAB0004287D /* Frameworks */,
+				44208F051CC51DAB0004287D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44208F091CC51DAB0004287D /* PBXTargetDependency */,
+			);
+			name = "Paris Best BarsUITests";
+			productName = "Paris Best BarsUITests";
+			productReference = 44208F071CC51DAB0004287D /* Paris Best BarsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44208EE01CC51DAB0004287D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Jbouahom;
+				TargetAttributes = {
+					44208EE71CC51DAB0004287D = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					44208EFB1CC51DAB0004287D = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 44208EE71CC51DAB0004287D;
+					};
+					44208F061CC51DAB0004287D = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 44208EE71CC51DAB0004287D;
+					};
+				};
+			};
+			buildConfigurationList = 44208EE31CC51DAB0004287D /* Build configuration list for PBXProject "Paris Best Bars" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 44208EDF1CC51DAB0004287D;
+			productRefGroup = 44208EE91CC51DAB0004287D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44208EE71CC51DAB0004287D /* Paris Best Bars */,
+				44208EFB1CC51DAB0004287D /* Paris Best BarsTests */,
+				44208F061CC51DAB0004287D /* Paris Best BarsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44208EE61CC51DAB0004287D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44208EF61CC51DAB0004287D /* LaunchScreen.storyboard in Resources */,
+				44208EF31CC51DAB0004287D /* Assets.xcassets in Resources */,
+				44208EF11CC51DAB0004287D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44208EFA1CC51DAB0004287D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44208F051CC51DAB0004287D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44208EE41CC51DAB0004287D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44208EEE1CC51DAB0004287D /* ViewController.swift in Sources */,
+				44208EEC1CC51DAB0004287D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44208EF81CC51DAB0004287D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44208F011CC51DAB0004287D /* Paris_Best_BarsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44208F031CC51DAB0004287D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44208F0C1CC51DAB0004287D /* Paris_Best_BarsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44208EFE1CC51DAB0004287D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44208EE71CC51DAB0004287D /* Paris Best Bars */;
+			targetProxy = 44208EFD1CC51DAB0004287D /* PBXContainerItemProxy */;
+		};
+		44208F091CC51DAB0004287D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44208EE71CC51DAB0004287D /* Paris Best Bars */;
+			targetProxy = 44208F081CC51DAB0004287D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		44208EEF1CC51DAB0004287D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44208EF01CC51DAB0004287D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		44208EF41CC51DAB0004287D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44208EF51CC51DAB0004287D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		44208F0E1CC51DAB0004287D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		44208F0F1CC51DAB0004287D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		44208F111CC51DAB0004287D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Paris Best Bars/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.saysana.Paris-Best-Bars";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		44208F121CC51DAB0004287D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Paris Best Bars/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.saysana.Paris-Best-Bars";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		44208F141CC51DAB0004287D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Paris Best BarsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.saysana.Paris-Best-BarsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Paris Best Bars.app/Paris Best Bars";
+			};
+			name = Debug;
+		};
+		44208F151CC51DAB0004287D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Paris Best BarsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.saysana.Paris-Best-BarsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Paris Best Bars.app/Paris Best Bars";
+			};
+			name = Release;
+		};
+		44208F171CC51DAB0004287D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Paris Best BarsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.saysana.Paris-Best-BarsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Paris Best Bars";
+			};
+			name = Debug;
+		};
+		44208F181CC51DAB0004287D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Paris Best BarsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.saysana.Paris-Best-BarsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Paris Best Bars";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44208EE31CC51DAB0004287D /* Build configuration list for PBXProject "Paris Best Bars" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44208F0E1CC51DAB0004287D /* Debug */,
+				44208F0F1CC51DAB0004287D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44208F101CC51DAB0004287D /* Build configuration list for PBXNativeTarget "Paris Best Bars" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44208F111CC51DAB0004287D /* Debug */,
+				44208F121CC51DAB0004287D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		44208F131CC51DAB0004287D /* Build configuration list for PBXNativeTarget "Paris Best BarsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44208F141CC51DAB0004287D /* Debug */,
+				44208F151CC51DAB0004287D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		44208F161CC51DAB0004287D /* Build configuration list for PBXNativeTarget "Paris Best BarsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44208F171CC51DAB0004287D /* Debug */,
+				44208F181CC51DAB0004287D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 44208EE01CC51DAB0004287D /* Project object */;
+}
