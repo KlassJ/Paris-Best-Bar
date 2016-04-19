@@ -13,8 +13,8 @@ class BarTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("yeah")
         loadBars()
+        tableView.contentInset.top = 20
     }
     
     func loadBars(){
@@ -54,23 +54,28 @@ class BarTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return bars.count
     }
 
-    /*
+
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCellWithIdentifier("BarTableViewCell", forIndexPath: indexPath) as! BarTableViewCell
+        let bar=bars[indexPath.row]
+        // je dl les images, de façon synchrone je devrais le faire de façon asynchrone
+        cell.name.text=bar.name
+        cell.tags.text=bar.tags
+        let url = NSURL(string: bar.image_url)
+        let data = NSData(contentsOfURL: url!)
+        cell.barIMG.image=UIImage(data:data!)
+        
         return cell
     }
-    */
+
 
     /*
     // Override to support conditional editing of the table view.

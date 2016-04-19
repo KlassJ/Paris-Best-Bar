@@ -1,60 +1,113 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="auY-wj-dQx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HQn-Xa-6QY">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="u6R-qd-KTi">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Paris_Best_Bars" customModuleProvider="target" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="102" y="-178"/>
-        </scene>
-        <!--Bar Table View Controller-->
-        <scene sceneID="qA9-cr-cxr">
-            <objects>
-                <tableViewController id="auY-wj-dQx" customClass="BarTableViewController" customModule="Paris_Best_Bars" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" id="uy1-A0-g27">
+                <viewController id="np1-zt-Jqb" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YIQ-r1-94K"/>
+                        <viewControllerLayoutGuide type="bottom" id="G7x-ns-8yE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FkD-Aj-gUG">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="UnK-4V-R0t">
+                                <rect key="frame" x="0.0" y="34" width="600" height="422"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="BarTableViewCell" rowHeight="80" id="hSw-Jy-eQf" customClass="BarTableViewCell" customModule="Paris_Best_Bars" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="600" height="80"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hSw-Jy-eQf" id="EHq-cq-6Pg">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="79"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GL9-b1-Shj">
-                                            <rect key="frame" x="-21" y="-36" width="240" height="128"/>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Tw-TH-iOW">
-                                            <rect key="frame" x="235" y="8" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="barIMG" destination="GL9-b1-Shj" id="z1A-pj-Rvc"/>
-                                    <outlet property="name" destination="2Tw-TH-iOW" id="kVa-bn-lAy"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="auY-wj-dQx" id="lvX-AY-OJt"/>
-                            <outlet property="delegate" destination="auY-wj-dQx" id="ahC-58-khd"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hUq-IU-xOg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <constraints>
+                            <constraint firstItem="UnK-4V-R0t" firstAttribute="leading" secondItem="FkD-Aj-gUG" secondAttribute="leading" id="DY5-6z-dAW"/>
+                            <constraint firstAttribute="trailing" secondItem="UnK-4V-R0t" secondAttribute="trailing" id="EGC-ve-CSJ"/>
+                            <constraint firstItem="UnK-4V-R0t" firstAttribute="top" secondItem="YIQ-r1-94K" secondAttribute="bottom" constant="14" id="Ltd-TB-8ch"/>
+                            <constraint firstItem="G7x-ns-8yE" firstAttribute="top" secondItem="UnK-4V-R0t" secondAttribute="bottom" constant="144" id="t5a-KR-eK3"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WPe-U8-QV5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="611" y="377"/>
+            <point key="canvasLocation" x="191" y="256"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="ywW-iA-IcH">
+            <objects>
+                <viewController id="HQn-Xa-6QY" customClass="MainViewController" customModule="Paris_Best_Bars" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="usW-MP-B5z"/>
+                        <viewControllerLayoutGuide type="bottom" id="1zM-tM-DBO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="625-Dy-bCz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uy1-A0-g27">
+                                <rect key="frame" x="0.0" y="-23" width="600" height="579"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="BarTableViewCell" rowHeight="80" id="hSw-Jy-eQf" customClass="BarTableViewCell" customModule="Paris_Best_Bars" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hSw-Jy-eQf" id="EHq-cq-6Pg">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="79"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GL9-b1-Shj">
+                                                    <rect key="frame" x="0.0" y="0.0" width="221" height="80"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="221" id="57c-qb-nJQ"/>
+                                                        <constraint firstAttribute="height" constant="80" id="NwH-58-ZMD"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Tw-TH-iOW">
+                                                    <rect key="frame" x="227" y="8" width="365" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kh8-K3-l6Y">
+                                                    <rect key="frame" x="227" y="37" width="365" height="23"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="barIMG" destination="GL9-b1-Shj" id="z1A-pj-Rvc"/>
+                                            <outlet property="name" destination="2Tw-TH-iOW" id="kVa-bn-lAy"/>
+                                            <outlet property="tags" destination="Kh8-K3-l6Y" id="tXG-RF-0nh"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Yd-Db-Gk0">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem title="MAP" id="WmR-cP-Oqm">
+                                        <connections>
+                                            <segue destination="np1-zt-Jqb" kind="show" id="Ij3-6n-to4"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="J93-kx-XtW"/>
+                                    <barButtonItem title="Bar List" id="16w-YR-hGp"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="bartableView" destination="uy1-A0-g27" id="lke-gJ-pH5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K0e-qh-0h2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-543" y="217"/>
         </scene>
     </scenes>
 </document>

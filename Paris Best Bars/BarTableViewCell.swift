@@ -10,6 +10,7 @@ import UIKit
 
 class BarTableViewCell: UITableViewCell {
     //MARK : Properties
+    @IBOutlet weak var tags: UILabel!
     @IBOutlet weak var barIMG: UIImageView!
     @IBOutlet weak var name: UILabel!
     override func awakeFromNib() {
