@@ -32,7 +32,7 @@ class MainViewController: UIViewController , UITableViewDelegate, UITableViewDat
                     if  item["tags"] is String{
                         tags = item["tags"] as! String
                     }
-                    let bar=Bar.init( id: item["id"] as! Int,  address: item["address"] as! String,name: item["name"] as! String, url: item["url"] as! String, image_url: item["image_url"] as! String, tags: tags, latitude: item["latitude"] as! Float,longitude: item["latitude"] as! Float)
+                    let bar=Bar.init( id: item["id"] as! Int,  address: item["address"] as! String,name: item["name"] as! String, url: item["url"] as! String, image_url: item["image_url"] as! String, tags: tags, latitude: item["latitude"] as! Double,longitude: item["longitude"] as! Double)
                     bars.append(bar)
                 }
             }
@@ -71,6 +71,16 @@ class MainViewController: UIViewController , UITableViewDelegate, UITableViewDat
         return cell
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if(segue.identifier == "BarDetail") {
+            let detailViewController = segue.destinationViewController as! DetailViewController
+            if let selectedBarCell = sender as? BarTableViewCell {
+                let indexpath = bartableView.indexPathForCell(selectedBarCell)
+                let selectedBar = bars[indexpath!.row]
+                detailViewController.bar=selectedBar
+            }
+        }
+    }
 
     /*
     // MARK: - Navigation

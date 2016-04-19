@@ -13,7 +13,6 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     @IBOutlet weak var barmap: MKMapView!
 
     func loadAnnotations(){
-        // Je lis le JSON et je le transforme en objet Bar
         guard let path=NSBundle.mainBundle().pathForResource("Pense bete", ofType: "json")
             else{
                 print("Error Finding file")
@@ -31,7 +30,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
                         tags = item["tags"] as! String
                     }
                     let barAnnotation = MKPointAnnotation()
-                    barAnnotation.coordinate = CLLocationCoordinate2DMake( item["latitude"] as! Double,  item["latitude"] as! Double)
+                    barAnnotation.coordinate = CLLocationCoordinate2DMake( item["latitude"] as! Double,  item["longitude"] as! Double)
                     barAnnotation.title = item["name"] as! String
                     barAnnotation.subtitle=tags
                     barmap.addAnnotation(barAnnotation)

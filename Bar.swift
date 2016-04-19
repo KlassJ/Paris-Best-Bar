@@ -16,13 +16,13 @@ class Bar {
     var url : String
     var image_url: String
     var tags: String?
-    var latitude: Float
-    var longitude: Float
+    var latitude: Double
+    var longitude: Double
 
     
 
 //MARK: Initialization
-    init(id:Int,address:String,name:String,url:String,image_url:String,tags:String?,latitude:Float,longitude:Float){
+    init(id:Int,address:String,name:String,url:String,image_url:String,tags:String?,latitude:Double,longitude:Double){
         self.id=id
         self.address=address
         self.name=name

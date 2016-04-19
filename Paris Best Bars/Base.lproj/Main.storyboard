@@ -47,7 +47,49 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WPe-U8-QV5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="191" y="256"/>
+            <point key="canvasLocation" x="115" y="372"/>
+        </scene>
+        <!--barDetail-->
+        <scene sceneID="dsi-jX-zIa">
+            <objects>
+                <viewController title="barDetail" id="L9k-bm-aNa" customClass="DetailViewController" customModule="Paris_Best_Bars" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LXt-A9-Qss"/>
+                        <viewControllerLayoutGuide type="bottom" id="gun-AY-846"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gL2-5f-Z0j">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="esv-l9-QJz">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="556"/>
+                            </mapView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b7H-EO-frD">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem title="Bar List" id="D6K-IZ-r3v">
+                                        <connections>
+                                            <segue destination="HQn-Xa-6QY" kind="show" id="Qeg-9p-sR7"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="94b-Jh-1wq"/>
+                                    <barButtonItem title="MAP" id="fPW-vm-wwa">
+                                        <connections>
+                                            <segue destination="np1-zt-Jqb" kind="show" id="RBi-cb-B7z"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="barMap" destination="esv-l9-QJz" id="h7T-mz-xbc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T9R-tz-CMU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-285" y="-641"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="ywW-iA-IcH">
@@ -97,6 +139,7 @@
                                             <outlet property="barIMG" destination="GL9-b1-Shj" id="z1A-pj-Rvc"/>
                                             <outlet property="name" destination="2Tw-TH-iOW" id="kVa-bn-lAy"/>
                                             <outlet property="tags" destination="Kh8-K3-l6Y" id="tXG-RF-0nh"/>
+                                            <segue destination="L9k-bm-aNa" kind="showDetail" identifier="BarDetail" id="hrH-UA-BJN"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -108,7 +151,7 @@
                                     <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="J93-kx-XtW"/>
                                     <barButtonItem title="MAP" id="WmR-cP-Oqm">
                                         <connections>
-                                            <segue destination="np1-zt-Jqb" kind="show" id="Ij3-6n-to4"/>
+                                            <segue destination="np1-zt-Jqb" kind="show" id="XVB-Qv-u31"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -116,13 +159,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ztc-Me-Ltw"/>
                     <connections>
                         <outlet property="bartableView" destination="uy1-A0-g27" id="lke-gJ-pH5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K0e-qh-0h2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-543" y="217"/>
+            <point key="canvasLocation" x="-1065" y="477"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="XVB-Qv-u31"/>
+        <segue reference="Qeg-9p-sR7"/>
+    </inferredMetricsTieBreakers>
 </document>
