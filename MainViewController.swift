@@ -40,7 +40,6 @@ class MainViewController: UIViewController , UITableViewDelegate, UITableViewDat
             print(error)
             return
         }
-        print(bars.count)
     }
 
 

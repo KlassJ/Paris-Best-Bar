@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="u6R-qd-KTi">
             <objects>
-                <viewController id="np1-zt-Jqb" sceneMemberID="viewController">
+                <viewController id="np1-zt-Jqb" customClass="MapViewController" customModule="Paris_Best_Bars" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YIQ-r1-94K"/>
                         <viewControllerLayoutGuide type="bottom" id="G7x-ns-8yE"/>
@@ -17,9 +17,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="UnK-4V-R0t">
-                                <rect key="frame" x="0.0" y="34" width="600" height="422"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="UnK-4V-R0t">
+                                <rect key="frame" x="0.0" y="-5" width="600" height="561"/>
                             </mapView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WPD-Zq-x21">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem title="Bar List" id="wIT-qz-p8s">
+                                        <connections>
+                                            <segue destination="HQn-Xa-6QY" kind="show" id="EL2-Wr-JwC"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="x4G-eW-Qom"/>
+                                    <barButtonItem title="MAP" id="ZxG-Ty-RCX"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -29,6 +41,9 @@
                             <constraint firstItem="G7x-ns-8yE" firstAttribute="top" secondItem="UnK-4V-R0t" secondAttribute="bottom" constant="144" id="t5a-KR-eK3"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="barmap" destination="UnK-4V-R0t" id="mgW-zG-Hzf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WPe-U8-QV5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -89,13 +104,13 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Yd-Db-Gk0">
                                 <rect key="frame" x="0.0" y="556" width="600" height="44"/>
                                 <items>
+                                    <barButtonItem title="Bar List" id="16w-YR-hGp"/>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="J93-kx-XtW"/>
                                     <barButtonItem title="MAP" id="WmR-cP-Oqm">
                                         <connections>
                                             <segue destination="np1-zt-Jqb" kind="show" id="Ij3-6n-to4"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="J93-kx-XtW"/>
-                                    <barButtonItem title="Bar List" id="16w-YR-hGp"/>
                                 </items>
                             </toolbar>
                         </subviews>
