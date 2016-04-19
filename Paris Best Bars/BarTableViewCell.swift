@@ -9,12 +9,14 @@
 import UIKit
 
 class BarTableViewCell: UITableViewCell {
-
+    //MARK : Properties
+    @IBOutlet weak var barIMG: UIImageView!
+    @IBOutlet weak var name: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 

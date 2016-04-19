@@ -15,6 +15,10 @@
 		44208F011CC51DAB0004287D /* Paris_Best_BarsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44208F001CC51DAB0004287D /* Paris_Best_BarsTests.swift */; };
 		44208F0C1CC51DAB0004287D /* Paris_Best_BarsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44208F0B1CC51DAB0004287D /* Paris_Best_BarsUITests.swift */; };
 		44208F1A1CC5201B0004287D /* BarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44208F191CC5201B0004287D /* BarTableViewCell.swift */; };
+		44208F1C1CC52C090004287D /* Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44208F1B1CC52C090004287D /* Bar.swift */; };
+		44208F201CC541380004287D /* BarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44208F1F1CC541380004287D /* BarTableViewController.swift */; };
+		44208F221CC549860004287D /* Pense bete.json in Resources */ = {isa = PBXBuildFile; fileRef = 44208F211CC549860004287D /* Pense bete.json */; };
+		44208F241CC5545F0004287D /* barTestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44208F231CC5545F0004287D /* barTestTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		44208F0B1CC51DAB0004287D /* Paris_Best_BarsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paris_Best_BarsUITests.swift; sourceTree = "<group>"; };
 		44208F0D1CC51DAB0004287D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44208F191CC5201B0004287D /* BarTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarTableViewCell.swift; sourceTree = "<group>"; };
+		44208F1B1CC52C090004287D /* Bar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bar.swift; sourceTree = "<group>"; };
+		44208F1F1CC541380004287D /* BarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarTableViewController.swift; sourceTree = "<group>"; };
+		44208F211CC549860004287D /* Pense bete.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "Pense bete.json"; path = "../../../../../../Volumes/Seagate Expansion Drive/Pense bete.json"; sourceTree = "<group>"; };
+		44208F231CC5545F0004287D /* barTestTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = barTestTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +87,9 @@
 		44208EDF1CC51DAB0004287D = {
 			isa = PBXGroup;
 			children = (
+				44208F1B1CC52C090004287D /* Bar.swift */,
+				44208F1F1CC541380004287D /* BarTableViewController.swift */,
+				44208F231CC5545F0004287D /* barTestTableViewController.swift */,
 				44208EEA1CC51DAB0004287D /* Paris Best Bars */,
 				44208EFF1CC51DAB0004287D /* Paris Best BarsTests */,
 				44208F0A1CC51DAB0004287D /* Paris Best BarsUITests */,
@@ -104,6 +115,7 @@
 				44208EEF1CC51DAB0004287D /* Main.storyboard */,
 				44208F191CC5201B0004287D /* BarTableViewCell.swift */,
 				44208EF21CC51DAB0004287D /* Assets.xcassets */,
+				44208F211CC549860004287D /* Pense bete.json */,
 				44208EF41CC51DAB0004287D /* LaunchScreen.storyboard */,
 				44208EF71CC51DAB0004287D /* Info.plist */,
 			);
@@ -234,6 +246,7 @@
 			files = (
 				44208EF61CC51DAB0004287D /* LaunchScreen.storyboard in Resources */,
 				44208EF31CC51DAB0004287D /* Assets.xcassets in Resources */,
+				44208F221CC549860004287D /* Pense bete.json in Resources */,
 				44208EF11CC51DAB0004287D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,7 +272,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44208F241CC5545F0004287D /* barTestTableViewController.swift in Sources */,
 				44208EEE1CC51DAB0004287D /* ViewController.swift in Sources */,
+				44208F1C1CC52C090004287D /* Bar.swift in Sources */,
+				44208F201CC541380004287D /* BarTableViewController.swift in Sources */,
 				44208EEC1CC51DAB0004287D /* AppDelegate.swift in Sources */,
 				44208F1A1CC5201B0004287D /* BarTableViewCell.swift in Sources */,
 			);
